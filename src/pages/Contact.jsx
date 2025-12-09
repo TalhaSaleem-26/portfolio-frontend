@@ -26,8 +26,7 @@ export default function Contact() {
 
       const response = await axios.post(
         `${import.meta.env.VITE_SERVER_URL}/api/contact/message`,
-        { name, email, message },
-        { withCredentials: true }
+        { name, email, message }
       );
 
       setLoading(false);
