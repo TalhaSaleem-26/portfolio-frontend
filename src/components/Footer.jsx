@@ -73,26 +73,33 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-2">Contact</h3>
           <p className="text-gray-400 mb-1">Email: aitech323@gmail.com</p>
           <p className="text-gray-400 mb-1">Phone: +92 31 95027234</p>
-          <div className="flex gap-4 mt-2">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
-            >
-              GitHub
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
-            >
-              Twitter
-            </a>
-          </div>
+   <div className="flex gap-4 mt-2">
+  <a
+    href="https://www.linkedin.com/in/talha-saleem-dev"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
+  >
+    LinkedIn
+  </a>
+  <a
+    href="https://github.com/TalhaSaleem-26"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
+  >
+    GitHub
+  </a>
+  <a
+    href="https://twitter.com/" // replace with your Twitter URL if you have one
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
+  >
+    Twitter
+  </a>
+</div>
+
         </div>
       </div>
 
