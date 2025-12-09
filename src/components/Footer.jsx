@@ -1,5 +1,5 @@
-// Footer.jsx
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -18,36 +18,52 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
           <ul className="space-y-1">
             <li>
-              <a
-                href="/"
-                className="hover:text-indigo-400 transition-colors duration-300"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-400"
+                    : "hover:text-indigo-400 transition-colors duration-300"
+                }
               >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/about"
-                className="hover:text-indigo-400 transition-colors duration-300"
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-400"
+                    : "hover:text-indigo-400 transition-colors duration-300"
+                }
               >
                 About
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/projects"
-                className="hover:text-indigo-400 transition-colors duration-300"
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-400"
+                    : "hover:text-indigo-400 transition-colors duration-300"
+                }
               >
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/contact"
-                className="hover:text-indigo-400 transition-colors duration-300"
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-400"
+                    : "hover:text-indigo-400 transition-colors duration-300"
+                }
               >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -55,7 +71,7 @@ function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-2">Contact</h3>
-          <p className="text-gray-400 mb-1">Email:aitech323@gmail.com</p>
+          <p className="text-gray-400 mb-1">Email: aitech323@gmail.com</p>
           <p className="text-gray-400 mb-1">Phone: +92 31 95027234</p>
           <div className="flex gap-4 mt-2">
             <a
@@ -80,7 +96,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
         &copy; {new Date().getFullYear()} TalhaDev. All rights reserved.
       </div>
